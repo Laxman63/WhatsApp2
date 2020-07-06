@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="100dp"
+    android:layout_height="69dp"
+    android:src="@drawable/profile_image"
+    android:scaleType="centerCrop"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:id="@+id/circlecustomchat"
+    />
+    <TextView
+        android:id="@+id/customname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+       android:textSize="25sp"
+        android:textColor="@color/cardview_light_background"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/lastseen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="Time"
+        android:layout_below="@+id/customname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+       android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

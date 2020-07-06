@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/first"
+    android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/circlefriend"
+        android:background="@drawable/input"
+        android:src="@drawable/profile_image"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/friendname"
+        android:text="Laxman kumar"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frienstatus"
+        android:text="Laxman kumar"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:textColor="@color/cardview_light_background"
+                android:text="Accept"
+                android:visibility="invisible"
+                android:id="@+id/accept"
+                android:layout_marginLeft="10dp"
+                android:textSize="10sp"
+                android:background="#07F728"
+                />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:textColor="@color/cardview_light_background"
+                android:text="Cancel"
+                android:visibility="invisible"
+                android:id="@+id/cancel"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dp"
+                android:background="#F81B07"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="23dp"
+        android:src="@drawable/online"
+        android:visibility="invisible"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>
